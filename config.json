@@ -1,0 +1,213 @@
+{
+  "users": [
+    {
+      "username": "admin_nurullo",
+      "password_hash": "71f1f4aecfcf1636e5421649611aee69551ab6afe5220b3746edd61a28f9003e",
+      "is_admin": true,
+      "role": "admin",
+      "token": "ACMA:ST0Tq2jbIUcWaEnJZeqvQMBPIVM0JF74UyioULpt:66d3d588",
+      "assigned_stores": [],
+      "can_view_all_campaigns": true,
+      "processed_orders": 26
+    },
+    {
+      "username": "seller1",
+      "password_hash": "71f1f4aecfcf1636e5421649611aee69551ab6afe5220b3746edd61a28f9003e",
+      "is_admin": false,
+      "role": "seller",
+      "token": "ACMA:ST0Tq2jbIUcWaEnJZeqvQMBPIVM0JF74UyioULpt:66d3d588",
+      "assigned_stores": [
+        "148757182",
+        "148671086",
+        "148718795"
+      ],
+      "can_view_all_campaigns": false,
+      "processed_orders": 0
+    },
+    {
+      "username": "spnovza",
+      "password_hash": "71f1f4aecfcf1636e5421649611aee69551ab6afe5220b3746edd61a28f9003e",
+      "is_admin": false,
+      "role": "seller",
+      "token": "ACMA:ST0Tq2jbIUcWaEnJZeqvQMBPIVM0JF74UyioULpt:66d3d588",
+      "assigned_stores": [
+        "148757182",
+        "148671086",
+        "148718795",
+        "148736316",
+        "148736325",
+        "148764921",
+        "148764960",
+        "148815177"
+      ],
+      "can_view_all_campaigns": false,
+      "processed_orders": 0
+    },
+    {
+      "username": "nurullo_a",
+      "password_hash": "71f1f4aecfcf1636e5421649611aee69551ab6afe5220b3746edd61a28f9003e",
+      "is_admin": false,
+      "role": "supplier",
+      "token": "ACMA:ST0Tq2jbIUcWaEnJZeqvQMBPIVM0JF74UyioULpt:66d3d588",
+      "assigned_stores": [
+        "148757182",
+        "148671086",
+        "148718795",
+        "148736316",
+        "148736325",
+        "148764921",
+        "148764960",
+        "148815177"
+      ],
+      "can_view_all_campaigns": false,
+      "processed_orders": 0
+    },
+    {
+      "username": "abdrouf",
+      "password_hash": "71f1f4aecfcf1636e5421649611aee69551ab6afe5220b3746edd61a28f9003e",
+      "is_admin": false,
+      "role": "supplier",
+      "token": "ACMA:ST0Tq2jbIUcWaEnJZeqvQMBPIVM0JF74UyioULpt:66d3d588",
+      "assigned_stores": [
+        "148757182",
+        "148671086",
+        "148718795",
+        "148736316",
+        "148736325",
+        "148764921",
+        "148764960",
+        "148815177"
+      ],
+      "can_view_all_campaigns": false,
+      "processed_orders": 0
+    }
+  ],
+
+  "telegram": {
+    "bot_token": "8036003142:AAEfW1dZ2tOcSNMrAiuy7BC3teDNkZ1makI",
+    "group_id": -5055978319,
+    "notify_on_return": true,
+    "notify_on_daily_order": true,
+    "notify_on_maintenance": true
+  },
+
+  "branding": {
+    "company_logo_path": "static/logo.png",
+    "company_name": "GadgetPro",
+    "tagline": "SP PHONE",
+    "primary_color": "#00D4FF",
+    "secondary_color": "#FF2EE6",
+    "accent_color": "#00FF9D"
+  },
+
+  "google_cse": {
+    "api_key": "AIzaSyAxny6wM28u5vVcy7kvJykYaYnQ-6gLWjA",
+    "cse_id": "817a54ca1d29843e5",
+    "max_images_per_query": 3,
+    "allowed_domains": ["texnomart.uz", "asaxiy.uz", "olcha.uz", "uzum.uz"],
+    "safe_search": "high"
+  },
+
+  "token": "ACMA:ST0Tq2jbIUcWaEnJZeqvQMBPIVM0JF74UyioULpt:66d3d588",
+
+  "ngrok": {
+    "auth_token": "31cCycKMlsUSUD051iDp3FLi9r0_3ovQcDHa4tKCMb8U6Usi7",
+    "enabled": true,
+    "auto_start": true,
+    "region": "us"
+  },
+
+  "backend": {
+    "url": "http://localhost:8080",
+    "auto_broadcast_changes": true,
+    "update_interval_seconds": 30,
+    "max_retries": 3
+  },
+
+  "features": {
+    "auto_broadcast_backend_url": true,
+    "strict_campaign_access": true,
+    "supplier_confirms_returns_first": true,
+    "seller_sees_only_own_campaign_returns": true,
+    "dynamic_pie_chart_only": false,
+    "enable_daily_orders": true,
+    "enable_returned_orders": true,
+    "enable_old_orders": true,
+    "auto_generate_pdf": true,
+    "enable_loading_animations": true,
+    "button_disabling_during_requests": true
+  },
+
+  "return_settings": {
+    "supplier_accept_required": true,
+    "supplier_deliver_required": true,
+    "seller_accept_required": true,
+    "auto_generate_pdf": true,
+    "old_orders_days": 30,
+    "notification_enabled": true
+  },
+
+  "daily_orders": {
+    "seller_can_accept": true,
+    "supplier_can_override": true,
+    "alternative_products_allowed": true,
+    "save_temporarily": true,
+    "auto_refresh_interval": 30
+  },
+
+  "pdf_settings": {
+    "font_path": "fonts/DejaVuSans.ttf",
+    "font_bold_path": "fonts/DejaVuSans-Bold.ttf",
+    "logo_path": "fineok_logo.jpg",
+    "secondary_logo_path": "spphone_logo.png",
+    "generate_on_save": true,
+    "generate_on_return": true
+  },
+
+  "database": {
+    "path": "data/orders.db",
+    "backup_enabled": true,
+    "backup_interval_hours": 24,
+    "cleanup_temp_days": 3
+  },
+
+  "security": {
+    "session_timeout_hours": 8,
+    "password_min_length": 6,
+    "max_login_attempts": 5,
+    "lockout_time_minutes": 15,
+    "enable_rate_limiting": true
+  },
+
+  "system": {
+    "version": "2.5.0",
+    "maintenance_mode": false,
+    "last_backend_url_broadcast": null,
+    "public_url": null,
+    "startup_time": null,
+    "last_cleanup": null
+  },
+
+  "logging": {
+    "level": "INFO",
+    "file_enabled": true,
+    "file_path": "logs/app.log",
+    "max_file_size_mb": 10,
+    "backup_count": 5
+  },
+
+  "api": {
+    "yandex_base_url": "https://api.partner.market.yandex.ru/v2",
+    "timeout_seconds": 30,
+    "max_retries": 3,
+    "retry_delay_seconds": 2
+  },
+
+  "ui": {
+    "theme": "dark",
+    "language": "uz",
+    "auto_refresh": true,
+    "refresh_interval_seconds": 60,
+    "notifications_enabled": true
+  }
+}

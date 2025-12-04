@@ -1,0 +1,9 @@
+Flask==2.3.3
+Flask-CORS==4.0.0
+requests==2.31.0
+google-api-python-client==2.108.0
+Pillow==10.1.0
+pandas==2.1.4
+fpdf==1.7.2
+pyngrok==6.0.0
+sqlite3
