@@ -1,0 +1,33 @@
+name: Deploy to PythonAnywhere
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Deploy to PythonAnywhere
+      env:
+        PA_USERNAME: ${{ secrets.PA_USERNAME }}
+        PA_TOKEN: ${{ secrets.PA_TOKEN }}
+        PA_APP_NAME: ${{ secrets.PA_APP_NAME }}
+      run: |
+        # SSH orqali ulanish
+        sshpass -p "$PA_TOKEN" ssh -o StrictHostKeyChecking=no $PA_USERNAME@ssh.pythonanywhere.com << 'EOF'
+          cd ~/gadgetpro
+          git pull origin main
+          source venv/bin/activate
+          pip install -r requirements.txt
+          
+          # Web app reload
+          curl https://www.pythonanywhere.com/api/v0/user/$PA_USERNAME/webapps/$PA_APP_NAME/reload/ \
+               -H "Authorization: Token $PA_TOKEN"
+          
+          echo "✅ Deployment completed via GitHub Actions"
+        EOF
